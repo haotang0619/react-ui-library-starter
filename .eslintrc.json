@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "plugins": ["import", "no-console-log", "prettier"],
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+  "ignorePatterns": ["dist/*"],
+  "rules": {
+    "import/no-anonymous-default-export": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "pathGroups": [
+          {
+            "pattern": "{next/**,react}",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["next/**", "react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "no-console-log/no-console-log": 1,
+    "prettier/prettier": "error"
+  }
+}
