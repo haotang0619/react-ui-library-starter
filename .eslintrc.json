@@ -1,30 +1,39 @@
 {
   "root": true,
-  "plugins": ["import", "no-console-log", "prettier"],
-  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:perfectionist/recommended-natural",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint/eslint-plugin", "perfectionist", "prettier"],
   "ignorePatterns": ["dist/*"],
   "rules": {
-    "import/no-anonymous-default-export": "off",
-    "import/order": [
+    "no-console": "warn",
+    "perfectionist/sort-imports": [
       "error",
       {
-        "groups": ["builtin", "external", "internal"],
-        "pathGroups": [
-          {
-            "pattern": "{next/**,react}",
-            "group": "external",
-            "position": "before"
-          }
+        "type": "alphabetical",
+        "order": "asc",
+        "ignore-case": true,
+        "groups": [
+          "builtin",
+          "react",
+          "external",
+          "internal",
+          "parent",
+          "sibling"
         ],
-        "pathGroupsExcludedImportTypes": ["next/**", "react"],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
+        "custom-groups": {
+          "value": {
+            "react": ["next", "next/**", "react"],
+            "internal": ["@/**"]
+          },
+          "type": { "react": "react" }
+        },
+        "newlines-between": "always"
       }
     ],
-    "no-console-log/no-console-log": 1,
     "prettier/prettier": "error"
   }
 }
