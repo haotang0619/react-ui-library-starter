@@ -17,6 +17,7 @@ import pkg from '../package.json';
 <Source
   language="tsx"
   code={`import { Test } from '${pkg.name}';
+import '${pkg.name}/style.css';
 
 export default function App() {
   return <Test>Hello world!</Test>;

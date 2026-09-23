@@ -1,19 +1,18 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
     "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "bundler",
+    "noEmit": true,
     "noUnusedLocals": true,
-    "outDir": "dist/esm",
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "sourceMap": true,
     "strict": true,
-    "target": "ES6"
+    "target": "ES2020"
   },
-  "include": ["src", "stories", ".storybook"]
+  "include": ["src", "stories", ".storybook", "tsdown.config.ts"]
 }
