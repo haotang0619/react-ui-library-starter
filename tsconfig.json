@@ -12,5 +12,12 @@
     "strict": true,
     "target": "ES2020"
   },
-  "include": ["src", "stories", ".storybook", "tsdown.config.ts"]
+  "include": [
+    "src",
+    "stories",
+    ".storybook",
+    "tsdown.config.ts",
+    "vitest.config.ts",
+    "vitest.setup.ts"
+  ]
 }
