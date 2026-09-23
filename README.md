@@ -10,30 +10,22 @@
 - 🐶 Husky — For running scripts before committing
 - 🚫 lint-staged — Run ESLint and Prettier against staged Git files
 
-## Prerequisite
-
-Install `pnpm`
-
-```bash
-brew install pnpm # macOS
-```
-
 ## Development
 
 To start the project locally, run:
 
 ```bash
-pnpm install # only for the first time or for installing new dependencies
-pnpm start
+npm install # only for the first time or for installing new dependencies
+npm run start
 ```
 
 - Check `http://localhost:3000` for Storybook demo.
 
 ## Publishing
 
-1. `pnpm version patch`
-2. `pnpm publish`
-3. `pnpm build-storybook`
+1. `npm version patch`
+2. `npm publish`
+3. `npm run build-storybook`
 4. Upload `/storybook-static` to some web server.
 
 ## Directory Structure
@@ -45,10 +37,10 @@ pnpm start
 
 ## Scripts
 
-- `pnpm start` — Starts the storybook in development mode.
-- `pnpm build` — Creates an optimized production build of your components in cjs & esm.
-- `pnpm build-storybook` — Creates an optimized production build of Storybook into `/storybook-static`.
-- `pnpm lint` — Runs ESLint for all files in the `src`, `stories` & `.storybook` directory.
+- `npm run start` — Starts the storybook in development mode.
+- `npm run build` — Creates an optimized production build of your components in cjs & esm.
+- `npm run build-storybook` — Creates an optimized production build of Storybook into `/storybook-static`.
+- `npm run lint` — Runs ESLint for all files in the `src`, `stories` & `.storybook` directory.
 
 ## Conventional Commits
 

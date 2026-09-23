@@ -14,15 +14,15 @@
     ]
   },
   "scripts": {
-    "prepublishOnly": "pnpm lint && pnpm build",
-    "preversion": "pnpm lint",
+    "prepublishOnly": "npm run lint && npm run build",
+    "preversion": "npm run lint",
     "start": "storybook dev -p 3000",
-    "build": "rm -rf dist/ && pnpm run build:esm && pnpm run build:cjs",
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build-storybook": "storybook build",
     "format": "prettier --write \"{src,stories,.storybook}/**/*.{ts,tsx}\" \"*.{ts*,js*}\"",
-    "lint": "pnpm format && eslint \"{src,stories,.storybook}/**/*.{ts,tsx}\" --fix",
+    "lint": "npm run format && eslint \"{src,stories,.storybook}/**/*.{ts,tsx}\" --fix",
     "postinstall": "[[ \"${POST_INSTALL}\" ]] && husky install || echo \"Skip postinstall\""
   },
   "author": "Howard Tang",
