@@ -1,0 +1,24 @@
+import { Meta, Source } from '@storybook/addon-docs/blocks';
+
+import pkg from '../package.json';
+
+<Meta title="Introduction" />
+
+# {pkg.name}
+
+{pkg.description}
+
+## Installation
+
+<Source language="bash" code={`npm install ${pkg.name}`} />
+
+## Usage
+
+<Source
+  language="tsx"
+  code={`import { Test } from '${pkg.name}';
+
+export default function App() {
+  return <Test>Hello world!</Test>;
+}`}
+/>

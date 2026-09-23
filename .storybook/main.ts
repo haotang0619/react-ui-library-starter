@@ -4,8 +4,8 @@ const config: StorybookConfig = {
   addons: ['@storybook/addon-docs'],
   framework: '@storybook/react-vite',
   stories: [
-    '../CHANGELOG.mdx',
     '../stories/**/*.mdx',
+    '../CHANGELOG.mdx',
     '../stories/**/*.stories.tsx',
   ],
 };
