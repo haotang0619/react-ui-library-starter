@@ -1,7 +1,7 @@
 {
   "name": "react-ui-library-starter",
   "version": "1.0.0",
-  "description": "UI library starter",
+  "description": "React UI library starter with ESLint, Prettier, Commitlint, Husky, and Storybook.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -47,7 +47,7 @@
     "prepare": "husky"
   },
   "author": "Howard Tang",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",
     "@commitlint/config-conventional": "^21.2.3",
@@ -65,7 +65,6 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-perfectionist": "^5.12.0",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "globals": "^17.12.0",
     "husky": "^9.1.7",
     "jsdom": "^30.1.1",
     "lint-staged": "^17.5.1",

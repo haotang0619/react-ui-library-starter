@@ -3,7 +3,6 @@ import prettier from 'eslint-config-prettier/flat';
 import perfectionist from 'eslint-plugin-perfectionist';
 import reactHooks from 'eslint-plugin-react-hooks';
 import { defineConfig, globalIgnores } from 'eslint/config';
-import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig([
@@ -16,9 +15,6 @@ export default defineConfig([
       perfectionist.configs['recommended-natural'],
     ],
     files: ['**/*.{js,mjs,ts,tsx}'],
-    languageOptions: {
-      globals: { ...globals.browser, ...globals.node },
-    },
     rules: {
       'no-console': 'warn',
       'perfectionist/sort-imports': [

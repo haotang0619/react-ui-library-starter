@@ -1,4 +1,4 @@
 # Add files here to ignore them from prettier formatting
+# (files in .gitignore are ignored automatically)
 
-/dist
 /package-lock.json

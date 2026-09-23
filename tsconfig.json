@@ -1,16 +1,13 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "isolatedModules": true,
     "jsx": "react-jsx",
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "preserve",
     "noEmit": true,
     "noUnusedLocals": true,
-    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2020"
+    "target": "ES2020",
+    "verbatimModuleSyntax": true
   },
   "include": [
     "src",

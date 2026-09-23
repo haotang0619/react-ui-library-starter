@@ -4,7 +4,7 @@ export default defineConfig({
   // Merge all component styles into a single dist/style.css for consumers to import.
   css: { splitting: false },
   dts: true,
-  entry: ['src/index.tsx'],
+  entry: ['src/index.ts'],
   failOnWarn: true,
   format: ['esm', 'cjs'],
   inputOptions: {

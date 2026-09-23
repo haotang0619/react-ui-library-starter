@@ -41,7 +41,7 @@ npm run start
 ### Adding a Component
 
 1. Create the component in `src/components`, e.g. `Button.tsx`, with styles in `Button.module.css`.
-2. Export it from `src/components/index.tsx`.
+2. Export it from `src/components/index.ts`.
 3. Add a test next to it, e.g. `Button.test.tsx`.
 4. Add a story in `stories`, e.g. `Button.stories.tsx`.
 
