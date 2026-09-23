@@ -34,12 +34,10 @@
     "*.{json,md,mdx,css,yml,yaml}": "prettier --write"
   },
   "scripts": {
-    "prepublishOnly": "npm run lint && npm run build",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm run build",
     "preversion": "npm run lint",
     "start": "storybook dev -p 3000",
     "build": "tsdown",
-    "build:esm": "tsc -p tsconfig.esm.json",
-    "build:cjs": "tsc -p tsconfig.cjs.json",
     "build-storybook": "storybook build",
     "format": "prettier --write .",
     "lint": "eslint . && prettier --check .",
@@ -65,12 +63,12 @@
     "globals": "^17.12.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.5.1",
-    "prettier": "^3.3.2",
+    "prettier": "^3.9.9",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "storybook": "^10.6.0",
     "tsdown": "^0.23.0",
-    "typescript": "^5.0.4",
+    "typescript": "~6.0.3",
     "typescript-eslint": "^8.70.1",
     "vite": "^8.3.0"
   },
