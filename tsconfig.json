@@ -7,13 +7,12 @@
     "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "node",
-    "noImplicitAny": false,
     "noUnusedLocals": true,
     "outDir": "dist/esm",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "strict": false,
+    "strict": true,
     "target": "ES6"
   },
   "include": ["src/**/*.tsx", "stories/**/*.tsx", ".storybook/**/*.tsx"]

@@ -23,6 +23,7 @@
     "build-storybook": "storybook build",
     "format": "prettier --write \"{src,stories,.storybook}/**/*.{ts,tsx}\" \"*.{ts*,js*}\"",
     "lint": "npm run format && eslint \"{src,stories,.storybook}/**/*.{ts,tsx}\" --fix",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky install"
   },
   "author": "Howard Tang",
