@@ -1,13 +1,14 @@
-import { Test, TestProps } from '../src';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import storybookCodePanel from './storybookCodePanel';
+import { Test } from '../src';
 
-export default {
+const meta = {
   component: Test,
-  parameters: {
-    storybookCodePanel: storybookCodePanel('Test'),
-  },
   title: 'Components/Test',
-};
+} satisfies Meta<typeof Test>;
 
-export const Main: { args: TestProps } = { args: { children: 'Hello world!' } };
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+export const Main: Story = { args: { children: 'Hello world!' } };
