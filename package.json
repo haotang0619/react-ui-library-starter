@@ -23,7 +23,7 @@
     "build-storybook": "storybook build",
     "format": "prettier --write \"{src,stories,.storybook}/**/*.{ts,tsx}\" \"*.{ts*,js*}\"",
     "lint": "npm run format && eslint \"{src,stories,.storybook}/**/*.{ts,tsx}\" --fix",
-    "postinstall": "[[ \"${POST_INSTALL}\" ]] && husky install || echo \"Skip postinstall\""
+    "prepare": "husky install"
   },
   "author": "Howard Tang",
   "license": "MIT",
@@ -52,7 +52,6 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "prettier": "^3.3.2",
-    "prop-types": "^15.8.1",
     "raw-loader": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -61,7 +60,7 @@
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
   }
 }
